@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px 40px;
+        }
+        h1{
+            color: rgb(17, 17, 200);
+            padding-right: 30%;
+            width:100px;
+            
+        }
+
+        .nav{
+            display: flex;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 35px;
+            
+            
+        }
+        .nav>div{
+            display: flex;
+            gap: 25px;
+        }
+        .nav>div>p{
+            margin: 20px;
+            font-size: 14px;
+            color: rgb(76, 76, 198);
+        }
+        .nav button{
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+        }
+        .top{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .card{
+            background-color: #f05a28;
+            text-align: center;
+            padding: 30px 22px 25px;
+            color: white;
+        }
+        .card img{
+            width: 150px;
+            height:150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+
+        }
+        .card h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .card p{
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .card button{
+            background-color: white;
+            border: none;
+            padding: 7px 20px;
+            font-size: 12;
+            cursor: pointer;
+        }
+        h2{
+            margin-bottom: 10px;
+        }
+        .mid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .mcard{
+            text-align: center;
+            padding: 25px;
+            
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        } 
+        .mcard img{
+            width: 70px;
+            margin-bottom: 15x;
+        }
+        .mcard h3{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .mcard p{
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .mcard button{
+            color: red;
+            border-top: 1px solid #dcdcdc;
+            padding-top:10px;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>Domino's Pizza</h1>
+        <div>
+            <p>OUR MENU</p>
+            <P>DOMINOS STORIES</P>
+            <P>GIFT CARD</P>
+            <P>CORPORATE ENQUIRY</P>
+            <P>CONTACT</P>
+        </div>
+        <button>Download App</button>
+    </div>
+    <br><br><br>
+    <h2>Order</h2>
+    <div class="top">
+        <div class="card">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="card img">
+            <h3>VEG PIZZA</h3>
+            <p>A delight for veggie lovers! Choose from our wide range of delicious vegetarian pizzas, its softer and tastier</p>
+            <button>VIEW ALL</button>
+        </div>
+    
+  
+        <div class="card">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="card img">
+            <h3>OUR MENU</h3>
+            <p>Indulge into mouth-watering taste of pizza mania range, perfect answer to all your food cravings</p>
+            <button>VIEW ALL</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="card img">
+            <h3>OUR MENU</h3>
+            <p>Choose your favourite non-veg pizzas from the dominos pizza menu. Get fresh non-veg pizza with your choice of crusts & toppings</p>
+            <button>VIEW ALL</button>
+        </div>
+   
+        <div class="card">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="card img">
+            <h3>OUR MENU</h3>
+            <p>Choose your favourite non-veg pizzas from the dominos pizza menu. Get fresh non-veg pizza with your choice of crusts & toppings</p>
+            <button>VIEW ALL</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="card img">
+            <h3>VEG PIZZA</h3>
+            <p>A delight for veggie lovers! Choose from our wide range of delicious vegetarian pizzas, its softer and tastier</p>
+            <button>VIEW ALL</button>
+        </div>
+   
+        <div class="card">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="card img">
+            <h3>OUR MENU</h3>
+            <p>Indulge into mouth-watering taste of pizza mania range, perfect answer to all your food cravings</p>
+            <button>VIEW ALL</button>
+        </div>
+    </div>
+    <h2>Explore</h2>
+    <div class="mid">
+        <div class="mcard">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="img">
+            <h3>OUR MENU</h3>
+            <p>Explore our range od delicious pizzas, delivered in 30 minutes</p>
+            <button>DISCOVER PIZZA</button>
+        </div>
+        <div class="mcard">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="img">
+            <h3>OUR MENU</h3>
+            <p>Explore our range od delicious pizzas, delivered in 30 minutes</p>
+            <button>DISCOVER PIZZA</button>
+        </div>
+        <div class="mcard">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="img">
+            <h3>OUR MENU</h3>
+            <p>Explore our range od delicious pizzas, delivered in 30 minutes</p>
+            <button>DISCOVER PIZZA</button>
+        </div>
+        <div class="mcard">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="img">
+            <h3>OUR MENU</h3>
+            <p>Explore our range od delicious pizzas, delivered in 30 minutes</p>
+            <button>DISCOVER PIZZA</button>
+        </div>
+        <div class="mcard">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="img">
+            <h3>OUR MENU</h3>
+            <p>Explore our range od delicious pizzas, delivered in 30 minutes</p>
+            <button>DISCOVER PIZZA</button>
+        </div>
+        <div class="mcard">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="img">
+            <h3>OUR MENU</h3>
+            <p>Explore our range od delicious pizzas, delivered in 30 minutes</p>
+            <button>DISCOVER PIZZA</button>
+        </div>
+        <div class="mcard">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="img">
+            <h3>OUR MENU</h3>
+            <p>Explore our range od delicious pizzas, delivered in 30 minutes</p>
+            <button>DISCOVER PIZZA</button>
+        </div>
+        <div class="mcard">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="img">
+            <h3>OUR MENU</h3>
+            <p>Explore our range od delicious pizzas, delivered in 30 minutes</p>
+            <button>DISCOVER PIZZA</button>
+        </div>
+    </div>
+</body>
+</html>
