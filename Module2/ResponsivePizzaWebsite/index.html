@@ -56,6 +56,11 @@
             height: 120px;
             padding-top: 20px;
             object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .card img:hover{
+            transform: scale(1.1);
+            
         }
         main{
             max-width:1200px;
@@ -87,11 +92,18 @@
             padding: 6px 20px;
             border: 1px solid #ffffff;
             color: tomato;
+            transition: transform 0.3s ease;
         }
         .card button:hover{
             cursor: pointer;
             background-color: white;
             color: black;
+            transform: scale(1.1);
+        }
+        main h2{
+            font-size: 28px;
+            margin-bottom: 20px;
+
         }
         .mid{
             display: grid;
@@ -134,6 +146,14 @@
             padding: 7px 20px;
             margin-top: 10px;
             font-size: 16px;
+            transition: transform 0.3s ease;
+            
+        }
+        .mid div button:hover{
+            cursor: pointer;
+            background-color: #f0f0f0;
+            color: black;
+            transform: scale(1.1);
         }
         .bottom{
             background-color: #e0dadaad;
@@ -275,8 +295,8 @@
             </div>
         </div>
    
-        <section>
-            <h2>Explore</h2>
+        <section><br>
+            <h2>Explore</h2><br><br>
             <div class="mid">
                 <div>
                     <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="img">
