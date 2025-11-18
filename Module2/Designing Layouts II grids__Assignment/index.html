@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+        .box{
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            grid-template-rows: repeat(3, 150px);
+            gap: 10px;
+            justify-content: center;
+            margin-top: 300px;
+        }
+        .inner{
+            background-color: lightblue;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;  
+            color: white;
+        }
+        .box .inner:nth-child(1){
+            background-color: rgba(255, 0, 0, 0.688);
+        }
+        .box .inner:nth-child(2){
+            background-color: rgba(0, 0, 255, 0.596);
+        }
+        .box .inner:nth-child(3){
+            background-color: rgb(218, 218, 67);
+        }
+        .box .inner:nth-child(4){
+            background-color: #8e21c8c4;
+        }
+        .box .inner:nth-child(5){
+            background-color: rgb(29, 196, 29);
+        }
+        .box .inner:nth-child(6){
+            background-color: rgb(55, 171, 217);
+        }
+        .box .inner:nth-child(7){
+            background-color: rgba(186, 87, 30, 0.707);
+        }
+        .box .inner:nth-child(8){
+            background-color: rgb(27, 190, 196);
+        }
+        .box .inner:nth-child(9){
+            background-color: maroon;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner">
+            <p>2.</p>
+        </div>
+        <div class="inner">
+            <p>3.</p>
+        </div>
+        <div class="inner">
+            <p>4.</p>
+        </div>
+        <div class="inner">
+            <p>5.</p>
+        </div>
+        <div class="inner">
+            <p>6.</p>
+        </div>
+        <div class="inner">
+            <p>1.</p>
+        </div>
+        <div class="inner">
+            <p>7.</p>
+        </div>
+        <div class="inner">
+            <p>8.</p>
+        </div>
+        <div class="inner">
+            <p>9.</p>
+        </div>
+    </div>
+</body>
+</html>
