@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masai Calculator</title>
+
+<style>
+    body {
+        font-family: Georgia, serif;
+        background: #ffffff;
+       
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 48px;
+        color: #225e57;
+        
+        margin-bottom: 70px;
+    }
+
+ 
+    .calculator {
+        width: 500px;
+       height: 550px;
+        padding: 40px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 18px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Display box */
+    .display {
+        width: 100%;
+        height: 150px;
+        background: #f7f7f7;
+        border-radius: 8px;
+        box-shadow: inset 0px 2px 6px rgba(0,0,0,0.15);
+        margin-bottom: 55px;
+    }
+
+    /* Grid of buttons */
+    .buttons {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    /* Default button style */
+    .btn {
+        width: 100%;
+        height: 75px;
+        background: #ffffff;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease;
+    }
+
+    .operator {
+        background: #000000;
+        color: white;
+        transition: transform 0.3s ease;
+    }
+
+    .clear {
+        background: #e8402f;
+        color: white;
+        transition: transform 0.3s ease;
+    }
+    .btn:hover,.operator:hover,.clear:hover{
+        transform: scale(1.1);
+    }
+
+</style>
+</head>
+
+<body>
+
+<h1>Masai Calculator</h1>
+
+<div class="calculator">
+
+    <!-- Display -->
+    <div class="display"></div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <div class="btn">1</div>
+        <div class="btn">2</div>
+        <div class="btn">3</div>
+        <div class="btn operator">+</div>
+
+        <div class="btn">4</div>
+        <div class="btn">5</div>
+        <div class="btn">6</div>
+        <div class="btn operator">-</div>
+
+        <div class="btn">7</div>
+        <div class="btn">8</div>
+        <div class="btn">9</div>
+        <div class="btn operator">x</div>
+
+        <div class="btn clear">C</div>
+        <div class="btn">0</div>
+        <div class="btn operator">=</div>
+        <div class="btn operator">/</div>
+    </div>
+
+</div>
+
+</body>
+</html>
