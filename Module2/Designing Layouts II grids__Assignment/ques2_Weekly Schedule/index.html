@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Schedule</title>
+
+<style>
+    body{
+        font-family: 'Arial', sans-serif;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    h1{
+        font-size:50px;
+        margin-bottom:50px;
+        color:#1a2b4b;
+        font-family: cursive;
+    }
+
+    .schedule{
+        width:90%;
+        max-width:1100px;
+        display:grid;
+        grid-template-columns: 100px repeat(5, 1fr);
+        gap:12px;
+        align-items:center;
+    }
+
+    .time, .day, .cell{
+        padding:12px 5px;
+        text-align:center;
+        border-radius:25px;
+        font-weight:bold;
+    }
+
+    .time{
+        background:#bfefff;
+        color:#0a2a42;
+    }
+
+    .day{
+        background:#ffb5d8;
+        font-size:18px;
+        color:#1a2b4b;
+    }
+
+    .day:nth-child(3){ background:#f8e38e; }
+    .day:nth-child(4){ background:#ffb5d8; }
+    .day:nth-child(5){ background:#f8e38e; }
+    .day:nth-child(6){ background:#ffb5d8; }
+
+    .cell{
+        height:32px;
+        border-radius:25px;
+        color:#1a2b4b;
+        font-weight:500;
+        font-size:14px;
+    }
+    .pink{ background:#ffb5d8; }
+    .yellow{ background:#f8e38e; }
+
+    .note-box{
+        width:90%;
+        max-width:1100px;
+        margin-top:20px;
+        background:#bfefff;
+        padding:15px;
+        border-radius:25px;
+        font-size:16px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Weekly Schedule</h1>
+
+<div class="schedule">
+
+    <div></div>
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+    <div class="day">Friday</div>
+
+    <div class="time">08:00</div>
+    <div class="cell pink">Math</div>
+    <div class="cell yellow">English</div>
+    <div class="cell pink">Science</div>
+    <div class="cell yellow">Art</div>
+    <div class="cell pink">Reading</div>
+
+    <div class="time">09:00</div>
+    <div class="cell pink">English</div>
+    <div class="cell yellow">Math</div>
+    <div class="cell pink">EVS</div>
+    <div class="cell yellow">Craft</div>
+    <div class="cell pink">Science</div>
+
+    <div class="time">10:00</div>
+    <div class="cell pink">PT</div>
+    <div class="cell yellow">Story Time</div>
+    <div class="cell pink">Math</div>
+    <div class="cell yellow">English</div>
+    <div class="cell pink">Drawing</div>
+
+    <div class="time">11:00</div>
+    <div class="cell pink">Science</div>
+    <div class="cell yellow">EVS</div>
+    <div class="cell pink">PT</div>
+    <div class="cell yellow">Math</div>
+    <div class="cell pink">English</div>
+
+    <div class="time">12:00</div>
+    <div class="cell pink">Lunch Break</div>
+    <div class="cell yellow">Lunch Break</div>
+    <div class="cell pink">Lunch Break</div>
+    <div class="cell yellow">Lunch Break</div>
+    <div class="cell pink">Lunch Break</div>
+
+    <div class="time">13:00</div>
+    <div class="cell pink">Drawing</div>
+    <div class="cell yellow">PT</div>
+    <div class="cell pink">English</div>
+    <div class="cell yellow">Science</div>
+    <div class="cell pink">EVS</div>
+
+    <div class="time">14:00</div>
+    <div class="cell pink">Science</div>
+    <div class="cell yellow">Math</div>
+    <div class="cell pink">English</div>
+    <div class="cell yellow">Computer</div>
+    <div class="cell pink">Story Time</div>
+
+    <div class="time">15:00</div>
+    <div class="cell pink">EVS</div>
+    <div class="cell yellow">Science</div>
+    <div class="cell pink">PT</div>
+    <div class="cell yellow">Math</div>
+    <div class="cell pink">English</div>
+
+    <div class="time">16:00</div>
+    <div class="cell pink">Revision</div>
+    <div class="cell yellow">Homework</div>
+    <div class="cell pink">Reading</div>
+    <div class="cell yellow">Craft</div>
+    <div class="cell pink">Games</div>
+
+</div>
+
+<div class="note-box">
+    <b>Note:</b> Exams on Friday.
+</div>
+
+</body>
+</html>
