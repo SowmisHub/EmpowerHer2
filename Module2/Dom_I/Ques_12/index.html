@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border: 1px solid black;
+        }
+        .inner{
+            
+            border-radius: 30px;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 40px;
+            width: 600px;
+        }
+        #addbtn{
+            width: 25%;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        #addbtn:hover{
+            transform: scale(1.1);
+            background-color: rgba(0, 0, 0, 0.505);
+            color: white;
+            font-size: 20px;
+        }
+        #myList li{
+            font-size: 25px;
+            
+        }
+        #myList{
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1>Simple webPage</h1>
+            <ul id="myList">
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+            </ul>
+            <button id="addbtn" onclick="addItem()">Add Item</button>
+        </div>
+    </div>
+</body>
+<script>
+
+    function addItem(){
+        let list =document.getElementById("myList");
+        let count=list.children.length+1;
+        let li=document.createElement("li")
+        li.textContent="New Item" + count;
+        if(count%2==0){
+            li.style.fontWeight="bold"
+            li.style.color="blue"
+
+        }else{
+            li.style.fontStyle="italic"
+            li.style.color='red';
+        }
+        
+        list.appendChild(li)
+
+    }
+</script>
+</html>
