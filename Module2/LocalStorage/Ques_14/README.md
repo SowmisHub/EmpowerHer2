@@ -11,6 +11,4 @@
   - Task text
   - Completion status
 
----
 
-## 📁 Project Structure
